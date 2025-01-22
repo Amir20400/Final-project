@@ -50,6 +50,11 @@
             \item Fuzzy searching is a technique that locates items in a dataset that approximately match a given pattern, even when there are minor discrepancies or errors.
             \item The command \texttt{(ls | fzf)} lists the files and directories in the current folder (\texttt{ls}) and passes them to (\texttt{fzf}). It lets you search and select items from the list using approximate matching. when you select an item, its name is printed to the terminal.
         \end{itemize}
+        \subsubsection{Using fzf to find your favorite PDF}
+        \begin{enumerate}
+            \item this command \texttt{(fd -e pdf)} will list all files with the .PDF extension
+            \item when we have the list of .PDF files, we can send the output to fzf to select a PDF from the data gathered. that’s the command: \texttt{fd -e pdf | fzf}
+        \end{enumerate}
 
         
 \end{document}
