@@ -25,5 +25,14 @@
         \item Vim supports multiple windows and buffers, allowing you to work on multiple files or sections simultaneously.
         \item Vimscript allows you to create custom scripts to extend Vim's functionality.
     \end{enumerate}
-
+    \subsection{Memory profiling}
+        \subsubsection{Memory Leak}
+        A memory leak occurs in a program when it allocates memory dynamically (using malloc or calloc in C) but fails to free it after it's no longer needed. This causes the allocated memory to remain unusable until the program terminates, which can lead to increased memory consumption and eventual system performance issues.
+        \\\textbf{how they happen:}
+        \begin{enumerate}
+            \item \textbf{Failure to Free Memory:} Forgetting to call free() for dynamically allocated memory.
+            \item \textbf{Lost References:} Overwriting or losing the pointer to the allocated memory without freeing it.
+            \item \textbf{Improper Pointer Management:} Freeing memory and then continuing to use the dangling pointer.
+            \item \textbf{Loops or Recursions:} Repeated allocations in loops or recursive functions without freeing memory in each iteration.
+        \end{enumerate}
 \end{document}
