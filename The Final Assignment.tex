@@ -15,5 +15,7 @@
     \subsection{Repository Initialization and Commits}
     first of all, I created a new repository by selecting new repository from the up-left the plus section.
     \\ second I copied the https link of the repository from the code section I cloned it to my PC by command: \texttt{git clone \textless https link of repository\textgreater}.
+    \subsection{GitHub Actions for LaTeX Compilation}
+     first i made this directory ".github/workflows" in my repository folder. I created this file "latex-build.yml" in workflows folder, and then I copied the text from the link inside the pdf in "latex-build.yml". and changed the main.tex to the name of my file "The Final Assignment", but it wasn't enough. In github i saw an error that was related to some permission, so i added this "permissions: write-all" to  "latex-build.yml".
 
 \end{document}
