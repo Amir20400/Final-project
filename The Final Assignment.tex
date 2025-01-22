@@ -55,6 +55,10 @@
             \item this command \texttt{(fd -e pdf)} will list all files with the .PDF extension
             \item when we have the list of .PDF files, we can send the output to fzf to select a PDF from the data gathered. that’s the command: \texttt{fd -e pdf | fzf}
         \end{enumerate}
-
+        \subsubsection{Opening the file using Zathura}
+        To open the selected PDF using Zathura, use this command:\\ 
+        \texttt{zathura "\$(fd -e pdf | fzf)"}.
+        \\\texttt{fd -e pdf} lists all files with the .pdf extension. \texttt{| fzf} sends the list to fzf. \texttt{zathura "\$( ... )"} 
+         opens the selected file with Zathura. The \texttt{\$( ... )} syntax captures the selected file path and passes it to Zathura.
         
 \end{document}
