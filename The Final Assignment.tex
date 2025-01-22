@@ -44,4 +44,12 @@
         \end{enumerate}
         Valgrind tracks all memory allocations and deallocations in a program. If memory is allocated but not freed before the program terminates, it flags this as a memory leak.
         \\This command \textbf{"valgrind --leak-check=full ./yourprogram"} will run your program under Valgrind, and it will display a detailed report of any memory leaks or issues detected.
+    \subsection{GNU/Linux Bash Scripting}
+        \subsubsection{fzf}
+        \begin{itemize}
+            \item Fuzzy searching is a technique that locates items in a dataset that approximately match a given pattern, even when there are minor discrepancies or errors.
+            \item The command \texttt{(ls | fzf)} lists the files and directories in the current folder (\texttt{ls}) and passes them to (\texttt{fzf}). It lets you search and select items from the list using approximate matching. when you select an item, its name is printed to the terminal.
+        \end{itemize}
+
+        
 \end{document}
