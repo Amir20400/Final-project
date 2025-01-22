@@ -35,4 +35,13 @@
             \item \textbf{Improper Pointer Management:} Freeing memory and then continuing to use the dangling pointer.
             \item \textbf{Loops or Recursions:} Repeated allocations in loops or recursive functions without freeing memory in each iteration.
         \end{enumerate}
+        \subsubsection{Memory profilers}
+        Valgrind provides a suite of tools to:
+        \begin{enumerate}
+            \item Detect memory management errors (leaks, invalid memory access).
+            \item Check for uninitialized memory usage.
+            \item Identify threading issues (race conditions).
+        \end{enumerate}
+        Valgrind tracks all memory allocations and deallocations in a program. If memory is allocated but not freed before the program terminates, it flags this as a memory leak.
+        \\This command \textbf{"valgrind --leak-check=full ./yourprogram"} will run your program under Valgrind, and it will display a detailed report of any memory leaks or issues detected.
 \end{document}
